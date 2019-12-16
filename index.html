@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            max-width: 40em;
+            margin: auto;
+        }
+        .subscribe-popup {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0, .6);
+        }
+        .subscribe-popup form {
+            margin: 30px auto;
+            max-width: 30em;
+            padding: 10px 40px 40px;
+            background: #fff;
+        }
+
+        .subscribe-popup.active {
+            display: block;
+        }
+    </style>
+    <h1>Marketing Copy</h1>
+    <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quia sed doloribus velit voluptatibus. Explicabo sit animi libero tempore natus ipsam odio quidem voluptate totam eum itaque, cum quasi.</p>
+    <p class="lorem">Iure quos, unde, at atque laborum hic illo repudiandae ut accusantium amet cupiditate sed asperiores quas est dolorum sint natus impedit magnam aliquid expedita harum? Quod odit voluptates magni nostrum!</p>
+    <p class="lorem">Temporibus, iusto voluptatibus tempore deleniti deserunt modi dolor numquam. Ducimus totam illum, dolore officia et aliquam est a quisquam aliquid iure atque saepe corporis consequuntur minus. Vitae voluptate ea quos!</p>
+    <p class="lorem">Esse ratione eaque sint excepturi necessitatibus, dolor adipisci aut quia cupiditate quas voluptate error blanditiis animi facere consectetur, nam asperiores dolore accusantium quis doloremque, est magnam iusto ipsum. Exercitationem, officia.</p>
+    <p class="lorem">Labore recusandae vero qui non similique sint corrupti iure, veritatis voluptate at maxime illum delectus unde dolores id ullam animi tempora! Omnis similique eos debitis. Ipsum vel saepe obcaecati aperiam.</p>
+
+    <div class="subscribe-popup">
+        <form method="/api/subscribe">
+            <h2>Don't forget to subscribe!</h2>
+            <label>Email: <input type="email"></label>
+            <input type="submit" />
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
